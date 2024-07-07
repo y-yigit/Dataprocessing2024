@@ -1,0 +1,15 @@
+samples:
+  - SRR24146506
+  - SRR27723524
+  - SRR27723527
+  - SRR27723540
+  - SRR27723546
+  - SRR29674253
+  - SRR14981901
+  - SRR15590968
+  - SRR15590970
+  - SRR15590971
+  - SRR20200355
+
+reference: reference
+output_dir: /home/ubuntu/Desktop/Dataprocessing/out
