@@ -1,4 +1,4 @@
-workdir: "/home/ubuntu/Desktop/Dataprocessing/"
+workdir: "/home/ubuntu/Dataprocessing2024/"
 
 configfile: "Config/config.yaml"
 SAMPLES = config["samples"]

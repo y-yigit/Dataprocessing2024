@@ -2,7 +2,8 @@
 configfile: "Config/config.yaml"
 
 # Rule to generate a pileup file using samtools mpileup and bcftools
-rule mpilup_downstream:
+
+rule mpilup_bcf:
     input:
         reference="data/reference.fasta",
         bam="out/samtools/mapped/{sample}.sorted.bam",
@@ -24,7 +25,6 @@ rule bcftools:
     shell:
         "bcftools view {input} | vcfutils.pl varFilter -D100 > {output}"
 
-# Rule to compute BAQ (Base Alignment Quality) using samtools calmd
 rule samtools_calmd:
     input:
         bam="out/samtools/mapped/{sample}.sorted.bam",
